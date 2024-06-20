@@ -21,8 +21,8 @@ csv_output_path = "C:\\Users\\HP PC\\OneDrive\\Desktop\\DataProj\\DataAnalysisPr
 
 
 dfnew.show(truncate=False)
-# dfpandas=dfnew.toPandas()
-# print(dfpandas.to_string(index=False))
-
+dfpandas=dfnew.toPandas()
+print(dfpandas.to_string(index=False))
+dfpandas.to_csv(csv_output_path,index=False)
 
 spark.stop()
